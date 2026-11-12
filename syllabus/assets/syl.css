@@ -1,0 +1,14 @@
+/* Syllabus: own styles on top of the shared frame */
+.sy-lead{font-size:1.08rem;color:var(--soft)}
+.sy-cta{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.btn.sm{min-height:40px;display:inline-flex;align-items:center}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal}
+td small{display:block;color:var(--soft);font-size:.86rem;margin-top:2px}
+.sy-bar{display:block;height:6px;border-radius:6px;background:var(--line);margin-top:4px;min-width:60px;overflow:hidden}
+.sy-bar i{display:block;height:100%;background:var(--accent);border-radius:6px}
+.sy-units>li{margin:8px 0}
+.sy-units ul{margin:4px 0 0;padding-left:20px;color:var(--soft)}
+input[inputmode]{width:100%;min-height:46px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px}
+.facts dd{overflow-wrap:anywhere}
+[hidden]{display:none!important}
+@media print{.sy-cta,.finder,.hint{display:none!important}}

@@ -1,0 +1,32 @@
+/* learn.shareyourgroup.com/sql: lesson pages and the practice box */
+.lesson pre,.pb pre{margin:0;padding:12px 14px;overflow-x:auto;font:500 .9rem/1.55 var(--mono);border-radius:10px;tab-size:2}
+.lesson pre code{font:inherit;background:none;padding:0;border:0;white-space:pre}
+.lesson pre.code{background:#0d1420;color:#e6edf6;border:1px solid #1f2a3a}
+.lesson pre.out{background:var(--surface2);border:1px solid var(--line);color:var(--ink)}
+.lesson pre.err,.msg.bad{border-left:4px solid var(--bad)}
+.lesson code{font:500 .92em var(--mono);background:var(--surface2);border:1px solid var(--line);border-radius:5px;padding:1px 5px;overflow-wrap:anywhere}
+.cb{margin:14px 0}
+.cbt{margin:6px 0 0}
+.cap{margin:8px 0 4px;font-size:.8rem;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:.05em}
+.res{margin:4px 0}.res table{font-size:.88rem}.res td,.res th{padding:6px 10px;white-space:nowrap}
+.rc{margin:2px 0 8px;font-size:.84rem;color:var(--soft)}.rc.done{color:var(--ok);font-weight:600}
+.null{color:var(--soft)}
+.ex{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:10px;padding:10px 14px;margin:14px 0}
+.ex p{margin:.4em 0}.ex details{border:0;padding:0;background:none}.ex summary{color:var(--link)}
+.meta{color:var(--soft);font-size:.9rem;margin:0 0 6px}
+.ln{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin:22px 0 10px}.ln .btn{flex:1 1 220px;text-align:center}
+.donebox{margin:22px 0 0}[data-done].on{background:var(--accent);color:var(--accent-ink)}
+.ll a.done span::after,.pq li.solved::after{content:" \2713";color:var(--ok);font-weight:700}
+.prog{font-weight:600;color:var(--ok)}.pq li{margin:.5em 0}
+.ind{border-top:1px solid var(--line);padding-top:12px;margin-top:22px}
+.grid a span{min-width:0}
+h2 small{font-weight:400;color:var(--soft);font-size:.8em}
+.pb{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px;margin:18px 0}
+.pb label{display:block;font-weight:700;margin-bottom:4px}
+.pb textarea{width:100%;min-height:150px;padding:12px;font:500 1rem/1.5 var(--mono);color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px;resize:vertical}
+.pb-ex{background:var(--surface2);border-left:4px solid var(--amber);border-radius:8px;padding:8px 14px;margin:0 0 12px}
+.pb-h{font-size:1.02rem;margin:1.2em 0 .3em}
+.msg{background:var(--surface2);border-radius:8px;padding:10px 14px;margin:12px 0}.msg.ok{border-left:4px solid var(--ok)}
+.pb-hist{padding-left:1.4em;margin:6px 0}.pb-hist button{display:block;width:100%;text-align:left;min-height:40px;padding:6px 8px;border:0;border-radius:8px;background:none;color:var(--link);font:500 .86rem var(--mono);cursor:pointer;overflow-wrap:anywhere}
+.pb-hist button:hover{background:var(--surface2)}
+@media print{.try,.ln,.donebox,.ind,.cbt{display:none!important}.lesson pre.code{background:#fff;color:#000;border:1px solid #999}.lesson pre,.lesson pre code{white-space:pre-wrap}.cb{break-inside:avoid}}

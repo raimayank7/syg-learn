@@ -1,0 +1,25 @@
+/* NISM Practice: own styles on top of the shared frame */
+.nm-lead{font-size:1.08rem;color:var(--soft)}
+.nm-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}
+.btn.sm{min-height:40px}
+.nq{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px;margin:16px 0}
+.nq .chips button{min-height:44px}
+.nq-q{font:700 clamp(1.05rem,.95rem + .7vw,1.3rem)/1.4 var(--font-head);margin:6px 0 12px;overflow-wrap:anywhere}
+.nq-o{display:grid;gap:8px}
+.nq-o button{min-height:48px;text-align:left;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface2);color:var(--ink);font:inherit;cursor:pointer;overflow-wrap:anywhere}
+.nq-o button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.nq-o button.good{background:var(--ok);color:var(--accent-ink);border-color:var(--ok)}
+.nq-o button.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.nq-o button:disabled{cursor:default;opacity:1}
+.nq .result.no,.result.no{border-color:var(--bad)}
+.nq-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 0}
+.nq-bar .sp{flex:1 1 auto}
+#nq-timer{font-family:var(--mono)}
+.ql details{margin:8px 0}.ql summary{overflow-wrap:anywhere}.ql ol{margin:.4em 0 .4em 1.2em;list-style:upper-alpha}
+.gl>div{border-bottom:1px solid var(--line);padding:10px 0}.gl dt{font-weight:700}.gl dd{margin:2px 0 0}
+.prose b,.prose li,.prose td{overflow-wrap:anywhere}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.fields input{min-height:44px;width:100%;box-sizing:border-box}.fields label{display:block}
+@media print{.nq,.chips{display:none!important}}

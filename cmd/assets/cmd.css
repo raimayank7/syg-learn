@@ -1,0 +1,19 @@
+/* learn.shareyourgroup.com/cmd */
+.term{margin:14px 0}
+.term figcaption{font-size:.78rem;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.term .nr{font-weight:600;text-transform:none;letter-spacing:0;background:var(--surface2);border:1px solid var(--line);border-radius:99px;padding:1px 8px;margin-left:6px}
+pre.tm{margin:0;padding:12px 14px;overflow-x:auto;font:500 .86rem/1.5 var(--mono);border-radius:10px;background:#0d1420;color:#d7dee9;border:1px solid #1f2a3a;tab-size:8}
+pre.tm code{font:inherit;background:none;border:0;padding:0;white-space:pre}
+pre.tm b{color:#fff;font-weight:700}pre.tm .pr{color:#7fd6a0}
+pre.tm.win .pr{color:#9ec5ff}pre.tm.out{background:var(--surface2);color:var(--ink);border-color:var(--line)}
+.cm code{font:500 .92em var(--mono);background:var(--surface2);border:1px solid var(--line);border-radius:5px;padding:1px 5px;overflow-wrap:anywhere}
+.note.danger{border-left-color:var(--bad);background:color-mix(in srgb,var(--bad) 9%,var(--surface))}
+.meta{color:var(--soft);font-size:.9rem;margin:0 0 6px}.meta a{color:var(--soft)}
+.fl{list-style:none;padding:0;margin:10px 0 20px;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr))}
+.fl a{display:block;min-height:52px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink)}
+.fl a:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.fl b{display:block;color:var(--link)}.fl span{display:block;color:var(--soft);font-size:.86rem;line-height:1.35}
+.cx h2{margin-top:1.2em}
+.ln{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin:22px 0 10px}.ln .btn{flex:1 1 220px;text-align:center}
+.ind{border-top:1px solid var(--line);padding-top:12px;margin-top:22px}
+@media print{.ln,.ind,.finder{display:none!important}pre.tm{background:#fff;color:#000;border:1px solid #999;white-space:pre-wrap}pre.tm code{white-space:pre-wrap}pre.tm b,pre.tm .pr{color:#000}}

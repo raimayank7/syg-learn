@@ -1,0 +1,28 @@
+/* Learn Tally: own styles on top of the shared frame */
+.tl-lead{font-size:1.08rem;color:var(--soft)}
+.tl-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+.tl-grid a{flex-direction:column;align-items:flex-start;gap:4px}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}
+.btn.sm{min-height:40px}
+table.tv{width:100%;border-collapse:collapse;font-size:.94rem;min-width:420px}
+table.tv caption{caption-side:top;text-align:left;font-weight:700;padding:6px 8px;font-family:var(--font-head)}
+table.tv th,table.tv td{padding:6px 9px;text-align:left;vertical-align:top}
+table.tv .n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+table.tv tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+kbd{font:600 .86rem var(--mono);background:var(--surface2);border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:1px 6px;white-space:nowrap}
+.pn{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin:18px 0}
+.pn a{flex:1 1 220px;border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;background:var(--surface);color:var(--ink);min-height:44px}
+.pn a small{display:block;color:var(--soft);font-size:.82rem}.pn a.nx{text-align:right}
+.gq{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px;margin:16px 0}
+.gq-q{font:700 clamp(1.2rem,1rem + 1.2vw,1.5rem)/1.3 var(--font-head);margin:6px 0 12px}
+.gq .chips button{min-height:44px;text-align:left}
+.gq .chips button.good{background:var(--ok);color:var(--accent-ink);border-color:var(--ok)}
+.gq .chips button.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.gq .chips button:disabled{cursor:default;opacity:1}
+.gq .result.no{border-color:var(--bad)}
+.gq-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.sc-chips button{min-height:40px}
+.gl>div{border-bottom:1px solid var(--line);padding:10px 0}.gl dt{font-weight:700}.gl dd{margin:2px 0 0}
+.prose b,.prose li{overflow-wrap:anywhere}
+@media print{.pn,.chips,.gq,.sc-chips{display:none!important}#sc-t tr[hidden]{display:none}}
