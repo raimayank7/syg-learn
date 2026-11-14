@@ -1,0 +1,20 @@
+/* learn.shareyourgroup.com/coa */
+.tool{background:var(--surface);border:2px solid var(--teal);border-radius:16px;padding:16px;margin:16px auto;max-width:900px}
+.tool button,.tool input,.tool select{font-family:inherit}
+.fnote{color:var(--soft);font-size:.92rem}
+.fields{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:8px 0}
+.fields label{display:grid;gap:4px;font-weight:700}
+.fields label.chk{display:flex;align-items:center;gap:8px;min-height:44px}
+.fields select,.fields input[type=text],.fields input[type=search]{min-height:44px;border:2px solid var(--field-line);border-radius:10px;padding:6px 10px;background:var(--field);color:var(--ink);font:inherit;max-width:100%}
+input[type=checkbox]{width:24px;height:24px;accent-color:var(--accent)}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.fout{font-weight:700;min-height:1.4em}
+.tbl td,.tbl th{vertical-align:top}
+.tbl td:first-child{white-space:nowrap}
+.cm-msg{border-left:5px solid var(--line);padding:8px 12px;border-radius:8px;background:var(--surface2);font-weight:600}
+.cm-msg.ok{border-left-color:var(--ok)}.cm-msg.bad{border-left-color:var(--bad)}
+.gcards{list-style:none;padding:0;margin:12px 0 20px;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+.gcards a{display:flex;flex-direction:column;gap:4px;height:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);text-decoration:none;color:var(--ink)}
+.gcards a:hover{border-color:var(--accent)}.gcards b{font:700 1.05rem var(--font-head)}.gcards span{font-size:.92rem;color:var(--soft)}
+details{border:1px solid var(--line);border-radius:12px;padding:8px 12px;background:var(--surface);margin:8px 0}summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}
+@media print{header,footer,.hero,.btns,.fields,details,.acts,.skip,nav,.gcards{display:none!important}.tool{border:0}}

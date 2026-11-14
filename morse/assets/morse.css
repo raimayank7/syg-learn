@@ -1,0 +1,35 @@
+/* learn.shareyourgroup.com/vedic */
+.tool{background:var(--surface);border:2px solid var(--teal);border-radius:16px;padding:16px;margin:16px auto;max-width:760px}
+.tool button,.tool input{font-family:inherit}
+.pq-lab{font-weight:700;font-size:1.1rem;margin:.2em 0 .5em}
+.pq-top{display:flex;justify-content:space-between;font-weight:700;color:var(--soft);min-height:32px}
+.pq-topic{font-size:.88rem;color:var(--accent);font-weight:700;margin:.3em 0}
+.pq-q{font-size:1.15rem;line-height:1.55;margin:.4em 0 .8em;overflow-wrap:anywhere}
+.pq-ch{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+.pq-ch button{min-height:56px;border-radius:12px;border:2px solid var(--field-line);background:var(--field);color:var(--ink);font:600 1.1rem var(--mono);text-align:left;padding:8px 12px;cursor:pointer}
+.pq-ch button i{font-style:normal;color:var(--soft);margin-right:8px}
+.pq-ch button.good{background:#1f9d55;border-color:#1f9d55;color:#fff}.pq-ch button.bad{background:#c0392b;border-color:#c0392b;color:#fff}
+.pq-ch button.good i,.pq-ch button.bad i{color:#fff}
+.pq-num{display:flex;flex-wrap:wrap;gap:10px;align-items:end}.pq-num label{width:100%;font-weight:700}.pq-num input{flex:1 1 140px;min-height:50px;font:600 1.2rem var(--mono);border:2px solid var(--field-line);border-radius:12px;padding:6px 12px;background:var(--field);color:var(--ink)}
+.pq-btns{margin-top:12px}
+.pq-fb{margin-top:12px;padding:10px 12px;border-radius:12px;background:var(--surface2)}.pq-fb:empty{display:none}.pq-fb.good{border-left:5px solid var(--ok)}.pq-fb.bad{border-left:5px solid var(--bad)}.pq-fb.skp{border-left:5px solid var(--line)}
+.pq-why{color:var(--soft)}
+.pq-big{font:700 2.2rem var(--font-head);margin:.2em 0}.pq-done{text-align:center}
+.calc th,.calc td{vertical-align:middle}.calc input{width:5.2em;min-height:44px;font:600 1rem var(--mono);text-align:center;border:2px solid var(--field-line);border-radius:8px;background:var(--field);color:var(--ink)}
+.calc-tot{font-size:1.3rem}.calc-msg{color:var(--bad);min-height:1.4em}
+.tool .fields{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.tool .fields input{min-height:48px;font-size:1.1rem}
+.units{counter-reset:u;list-style:none;padding:0}.units li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0;background:var(--surface)}.units h3{margin:0 0 .3em;font-size:1.05rem}.units p{margin:.3em 0}.units .tip{color:var(--soft)}
+.gcards{list-style:none;padding:0;margin:12px 0 20px;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+.gcards a{display:flex;flex-direction:column;gap:4px;height:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);text-decoration:none;color:var(--ink)}
+.gcards a:hover{border-color:var(--accent)}.gcards b{font:700 1.05rem var(--font-head)}.gcards span{font-size:.92rem;color:var(--soft)}
+@media (max-width:480px){.pq-ch{grid-template-columns:1fr}.calc input{width:3.6em}}
+.fields{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:8px 0}
+.fields label{display:grid;gap:4px;font-weight:700}
+.fields select,.fields input,.tbl input[type=text],.tbl input[type=number]{min-height:44px;border:2px solid var(--field-line);border-radius:10px;padding:6px 10px;background:var(--field);color:var(--ink);font:inherit;max-width:100%}
+.tbl input[type=number]{width:90px}
+@media print{header,footer,.hero,.btn,.fields,.acts,.skip,nav{display:none!important}.tool{border:0}}
+.pq-why{padding-left:1.2em}
+
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em;word-break:break-word}
+.flash{height:56px;border-radius:12px;border:1px solid var(--line,#8884);background:transparent;margin:.6rem 0;transition:none}
+.flash.on{background:#fbbf24;border-color:#fbbf24}

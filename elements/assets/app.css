@@ -6,7 +6,7 @@
 .pt .ph{display:grid;place-items:center;font-size:.68rem;color:var(--soft);border:1px dashed var(--line);border-radius:8px;text-align:center}
 .el{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:58px;padding:3px 2px;border-radius:8px;text-decoration:none;color:var(--ink);line-height:1.1;
   background:hsl(var(--h) 75% 50%/.2);border:1px solid hsl(var(--h) 55% 45%/.55);overflow:hidden}
-.el i{font:500 .64rem var(--mono);font-style:normal;color:var(--soft);align-self:flex-start;margin-left:3px}
+.el i{font:500 .64rem var(--mono);font-style:normal;color:var(--ink);align-self:flex-start;margin-left:3px}
 .el b{font:700 1.08rem var(--font-head)}
 .el span{font-size:.56rem;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .el:hover,.el:focus-visible{border-color:var(--ink);background:hsl(var(--h) 75% 50%/.38)}
@@ -19,7 +19,7 @@
 .elhero>div:last-child{flex:1 1 260px;min-width:0}
 .tilebig{width:118px;height:118px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none;
   background:hsl(var(--h) 75% 50%/.22);border:2px solid hsl(var(--h) 55% 45%/.7);line-height:1.1}
-.tilebig i{font:500 .9rem var(--mono);font-style:normal;color:var(--soft)}
+.tilebig i{font:500 .9rem var(--mono);font-style:normal;color:var(--ink)}
 .tilebig b{font:700 2.6rem var(--font-head)}
 .tilebig span{font:500 .78rem var(--mono)}
 .elnav{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:14px;font-weight:600;font-size:.94rem}

@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-prompts-cdc110db81', SHELL = ["/prompts/assets/site.css?v=1f799d5064", "/prompts/assets/site.js?v=be6129bb4a", "/prompts/icons/logo-light.webp", "/prompts/icons/logo-dark.webp"];
+const CACHE = 'syg-m-prompts-5f0e96f5c0', SHELL = ["/prompts/assets/site.css?v=bdcd893b36", "/prompts/assets/site.js?v=be6129bb4a", "/prompts/icons/logo-light.webp", "/prompts/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-prompts-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
