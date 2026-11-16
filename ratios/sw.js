@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-ratios-5f0e96f5c0', SHELL = ["/ratios/assets/site.css?v=bdcd893b36", "/ratios/assets/site.js?v=be6129bb4a", "/ratios/icons/logo-light.webp", "/ratios/icons/logo-dark.webp"];
+const CACHE = 'syg-m-ratios-5010c6a73a', SHELL = ["/ratios/assets/site.css?v=403176beac", "/ratios/assets/site.js?v=38b96724e9", "/ratios/icons/logo-light.webp", "/ratios/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-ratios-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

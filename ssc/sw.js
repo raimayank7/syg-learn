@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-ssc-5f0e96f5c0', SHELL = ["/ssc/assets/site.css?v=bdcd893b36", "/ssc/assets/site.js?v=be6129bb4a", "/ssc/icons/logo-light.webp", "/ssc/icons/logo-dark.webp"];
+const CACHE = 'syg-m-ssc-5010c6a73a', SHELL = ["/ssc/assets/site.css?v=403176beac", "/ssc/assets/site.js?v=38b96724e9", "/ssc/icons/logo-light.webp", "/ssc/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-ssc-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
