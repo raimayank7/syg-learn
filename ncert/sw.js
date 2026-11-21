@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-ncert-5010c6a73a', SHELL = ["/ncert/assets/site.css?v=403176beac", "/ncert/assets/site.js?v=38b96724e9", "/ncert/icons/logo-light.webp", "/ncert/icons/logo-dark.webp"];
+const CACHE = 'syg-m-ncert-75c362940e', SHELL = ["/ncert/assets/site.css?v=9cff45ef36", "/ncert/assets/site.js?v=38b96724e9", "/ncert/icons/logo-light.webp", "/ncert/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-ncert-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

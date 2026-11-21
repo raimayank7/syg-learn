@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-tally-5010c6a73a', SHELL = ["/tally/assets/site.css?v=403176beac", "/tally/assets/site.js?v=38b96724e9", "/tally/icons/logo-light.webp", "/tally/icons/logo-dark.webp"];
+const CACHE = 'syg-m-tally-75c362940e', SHELL = ["/tally/assets/site.css?v=9cff45ef36", "/tally/assets/site.js?v=38b96724e9", "/tally/icons/logo-light.webp", "/tally/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-tally-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
