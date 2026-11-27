@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-currentaffairs-75c362940e', SHELL = ["/currentaffairs/assets/site.css?v=9cff45ef36", "/currentaffairs/assets/site.js?v=38b96724e9", "/currentaffairs/icons/logo-light.webp", "/currentaffairs/icons/logo-dark.webp"];
+const CACHE = 'syg-m-currentaffairs-82edbd176f', SHELL = ["/currentaffairs/assets/site.css?v=36eb89c45d", "/currentaffairs/assets/site.js?v=9977d20129", "/currentaffairs/icons/logo-light.webp", "/currentaffairs/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-currentaffairs-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

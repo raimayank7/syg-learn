@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-codekids-75c362940e', SHELL = ["/codekids/assets/site.css?v=9cff45ef36", "/codekids/assets/site.js?v=38b96724e9", "/codekids/icons/logo-light.webp", "/codekids/icons/logo-dark.webp"];
+const CACHE = 'syg-m-codekids-82edbd176f', SHELL = ["/codekids/assets/site.css?v=36eb89c45d", "/codekids/assets/site.js?v=9977d20129", "/codekids/icons/logo-light.webp", "/codekids/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-codekids-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

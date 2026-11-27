@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-typing-75c362940e', SHELL = ["/typing/assets/site.css?v=9cff45ef36", "/typing/assets/site.js?v=38b96724e9", "/typing/icons/logo-light.webp", "/typing/icons/logo-dark.webp"];
+const CACHE = 'syg-m-typing-82edbd176f', SHELL = ["/typing/assets/site.css?v=36eb89c45d", "/typing/assets/site.js?v=9977d20129", "/typing/icons/logo-light.webp", "/typing/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-typing-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

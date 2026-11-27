@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-allowance-75c362940e', SHELL = ["/allowance/assets/site.css?v=9cff45ef36", "/allowance/assets/site.js?v=38b96724e9", "/allowance/icons/logo-light.webp", "/allowance/icons/logo-dark.webp"];
+const CACHE = 'syg-m-allowance-82edbd176f', SHELL = ["/allowance/assets/site.css?v=36eb89c45d", "/allowance/assets/site.js?v=9977d20129", "/allowance/icons/logo-light.webp", "/allowance/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-allowance-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {

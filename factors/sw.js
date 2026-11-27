@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-factors-75c362940e', SHELL = ["/factors/assets/site.css?v=9cff45ef36", "/factors/assets/site.js?v=38b96724e9", "/factors/icons/logo-light.webp", "/factors/icons/logo-dark.webp"];
+const CACHE = 'syg-m-factors-82edbd176f', SHELL = ["/factors/assets/site.css?v=36eb89c45d", "/factors/assets/site.js?v=9977d20129", "/factors/icons/logo-light.webp", "/factors/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-factors-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
